@@ -4,6 +4,7 @@ setxkbmap -option caps:swapescape #ESC -> CAPS
 compton --respect-prop-shadow &
 xbanish &
 greenclip daemon &
+xautolock -time 2 -locker "i3lock-fancy -g -t 'Incorrect'" &
 
 python -m pywal -R &
 source "$HOME/.cache/wal/colors.sh" # Source color scheme
