@@ -1,4 +1,5 @@
 alias c="clear"
+alias C="yadm"
 alias t="touch"
 alias e="$EDITOR"
 alias ed="emacs --daemon --no-window-system -fg '$color1' &"
