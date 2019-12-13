@@ -1,0 +1,15 @@
+[global]
+  sort = yes #Sort by urgency
+  indicate_hidden = yes
+  markup = yes
+  format = "<b>%s</b>\n%b"
+  padding = 8
+  geometry = "300x5-30+20"
+  horizontal_padding = 8
+  font = Fantasque Sans Mono 10
+  monitor = 0
+  startup_notification = true
+  word_wrap = yes
+  forground = #000000
+  summary = "*"
+  script = ~/.config/dunst/dunst.sh

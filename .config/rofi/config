@@ -1,0 +1,5 @@
+rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
+rofi.font: Fantasque Sans Mono 12
+rofi.lines: 12
+rofi.location: 1
+rofi.width: 100

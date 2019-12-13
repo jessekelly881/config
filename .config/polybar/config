@@ -1,0 +1,164 @@
+[colors]
+background = ${xrdb:color0}
+foreground = ${xrdb:color1}
+foreground-alt = ${xrdb:color7}
+primary = ${xrdb:color1}
+secondary = ${xrdb:color2}
+alert = ${xrdb:color3}
+
+[bar/bar]
+font-0 = "Fantasque Sans Mono:pixelsize=12;2"
+font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=10;2"
+font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=10;2"
+font-3 = "Font Awesome 5 Brands:style=Regular:pixelsize=10;1"
+monitor = eDP-1
+width = 99%
+height = 16
+offset-x = 0
+offset-y = 0
+tray-transparent = true
+
+background = white
+foreground = ${colors.background}
+linecolor = ${colors.secondary}
+
+modules-left = keyboard packages hd cpu memory battery date
+
+[module/date]
+format-background =${xrdb:color1}
+format-padding = 1
+format-margin = 0
+type = internal/date
+date = %a(%b. %d) %I:%M %p (%j)
+interval = 15
+
+[module/cpu]
+format-padding = 1
+type = internal/cpu
+interval = .5
+format-background = ${xrdb:color2}
+label =  %percentage%
+
+[module/memory]
+format-padding = 1
+type = internal/memory
+interval = .5
+format-background = ${xrdb:color2}
+label = %percentage_used%
+
+[module/ip]
+type = custom/script
+exec =  dig +short myip.opendns.com @resolver1.opendns.com
+format-background = ${xrdb:color3}
+label = %output%
+interval = 5
+format-padding = 1
+format-margin = 0
+
+[module/battery]
+type = custom/script
+exec = acpi | sed 's/%//' | awk -F', ' '{if ($2 >= 90) print "", $2; else if ($2 >= 70 && $2 < 90) print "", $2; else if ($2 >= 50 && $2 < 75) print "", $2; else if ($2 >= 25 && $2 < 50) print "", $2; else print "", $2}'
+format-background = ${xrdb:color4}
+label = %output%
+interval = .5
+format-padding = 1
+format-margin = 0
+
+[module/wifi]
+type = custom/script
+exec = nmcli device wifi list | awk '/*/{print $1}'
+format-background = ${xrdb:color5}
+label =  %output%
+interval = 10
+format-padding = 1
+format-margin = 0
+
+[module/exchange]
+type = custom/script
+exec = curl -s http://free.currencyconverterapi.com/api/v5/convert\?q\=USD_MXN\&compact\=y | awk -F ':' '{printf "%.2f", $3}' | sed -e 's/[{}]/''/g'
+interval = 60
+format-background =${xrdb:color6}
+label =  %output%(MXN)
+format-padding = 1
+
+[module/weather]
+type = custom/script
+exec =  weather 19.42847,-99.12766 | grep Temp | awk '{print $2,$3}' | sed 's/\%//'
+interval = 30
+format-background = ${xrdb:color7}
+label =  %output%
+format-padding = 1
+
+[module/volume]
+type = custom/script
+exec = pactl list | grep -m 1 Volume | awk -F '/' '{gsub (" ", "", $0); print $2}'
+interval = 0.5
+format-background = ${xrdb:color8}
+label =  %output%
+format-padding = 1
+click-left = pactl -- set-sink-volume 0 0
+
+[module/calander]
+type = custom/script
+exec = echo "$(calcurse -r1 | grep '*' | wc -l)($(calcurse -r7 | grep '*' | wc -l))"
+interval = 1
+format-background = ${xrdb:color9}
+label =  %output%
+format-padding = 1
+click-left = notify-send $(calander -r2 | grep '*' | sed 's/*//')
+
+[module/email]
+type = custom/script
+exec = echo $(ls -1 ".mail/INBOX/new" | wc -l | awk '{if ($0 == 0) print "", $0; else print "", $0}')$(ps -e | grep offlineimap | awk '/offline/{print " "}')
+format-background = ${xrdb:color10}
+label =  %output%
+format-padding = 1
+interval = 5
+
+[module/sysvars]
+type = custom/script
+exec = echo "$HOSTNAME"
+format-padding = 1
+interval = 10
+format-background = ${xrdb:color1}
+
+[module/bt]
+type = custom/script
+exec = hcitool scan | grep : | wc -l
+format-padding = 1
+interval = 15
+label =  %output%
+format-background = ${xrdb:color1}
+
+
+[module/keyboard]
+type = custom/script
+exec = setxkbmap -print -verbose 10 | grep layout | awk '{print $2}'
+format-padding = 1
+interval = 1
+label =  %output%
+format-background = ${xrdb:color2}
+
+[module/i3-workspace]
+type = custom/script
+exec = i3-msg -t get_workspaces | tr , '\n' | grep -B 1 '"visible":true' | awk -F ':' '/name/{print $2}' | sed 's/"//g'
+format-padding = 1
+interval = 1
+label = %output%
+format-background = ${xrdb:color4}
+
+[module/packages]
+type = custom/script
+exec = pacman -Qe | wc -l
+format-padding = 1
+interval = 20
+label =  %output%
+format-background = ${xrdb:color4}
+
+[module/hd]
+type = custom/script
+exec = df -H | awk '/home/{print $4}'
+format-padding = 1
+interval = 20
+label =  %output%
+format-background = ${xrdb:color6}
