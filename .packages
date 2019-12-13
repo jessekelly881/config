@@ -38,6 +38,7 @@ gzip
 highlight
 htop
 i3-gaps
+i3lock-color
 imagemagick
 jdk8-openjdk
 lib32-freetype2
@@ -83,6 +84,18 @@ sudo
 surf
 synergy
 texinfo
+texlive-bibtexextra
+texlive-core
+texlive-fontsextra
+texlive-formatsextra
+texlive-games
+texlive-humanities
+texlive-latexextra
+texlive-music
+texlive-pictures
+texlive-pstricks
+texlive-publishers
+texlive-science
 the_silver_searcher
 tmux
 tree
@@ -99,6 +112,7 @@ unzip
 vim
 w3m
 which
+xautolock
 xf86-video-vesa
 xorg-bdftopcf
 xorg-docs
