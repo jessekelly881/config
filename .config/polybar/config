@@ -22,7 +22,7 @@ background = white
 foreground = ${colors.background}
 linecolor = ${colors.secondary}
 
-modules-left = keyboard packages hd cpu memory battery date
+modules-left = weather keyboard packages hd cpu memory battery date
 
 [module/date]
 format-background =${xrdb:color1}
@@ -83,10 +83,10 @@ format-padding = 1
 
 [module/weather]
 type = custom/script
-exec =  weather 19.42847,-99.12766 | grep Temp | awk '{print $2,$3}' | sed 's/\%//'
+exec = curl -s "wttr.in/?format=3&u"
 interval = 30
 format-background = ${xrdb:color7}
-label =  %output%
+label = %output%
 format-padding = 1
 
 [module/volume]
