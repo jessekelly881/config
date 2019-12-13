@@ -1,0 +1,22 @@
+[alias]
+	s = status -s
+	c = commit
+	cm = commit -m
+	t = touch
+	last = show HEAD
+	master = checkout master
+	p = push -u
+	a = alias
+	w = !watch -c -n1 -x unbuffer git status -s
+	co = checkout
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s' --abbrev-commit --date=relative
+	r = reset
+	rh = reset --hard
+	rs = reset --soft
+[user]
+	email = kellyjesse881@gmail.com
+	name = Jesse Kelly
+[push]
+	default = current
+[credential]
+	helper = store
