@@ -22,7 +22,7 @@ background = white
 foreground = ${colors.background}
 linecolor = ${colors.secondary}
 
-modules-left = weather keyboard packages hd cpu memory battery date
+modules-left = keyboard packages hd cpu memory battery weather music date
 
 [module/date]
 format-background =${xrdb:color1}
@@ -49,6 +49,15 @@ label = %percentage_used%
 [module/ip]
 type = custom/script
 exec =  dig +short myip.opendns.com @resolver1.opendns.com
+format-background = ${xrdb:color3}
+label = %output%
+interval = 5
+format-padding = 1
+format-margin = 0
+
+[module/music]
+type = custom/script
+exec = playerctl metadata -f "{{artist}} - {{title}}"
 format-background = ${xrdb:color3}
 label = %output%
 interval = 5
