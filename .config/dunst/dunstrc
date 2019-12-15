@@ -8,7 +8,6 @@
   horizontal_padding = 8
   font = Fantasque Sans Mono 10
   monitor = 0
-  startup_notification = true
   word_wrap = yes
   forground = #000000
   summary = "*"
