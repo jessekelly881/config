@@ -18,3 +18,4 @@ urxvt -e tmux attach &
 sleep 1s
 i3-msg "workspace 2"
 google-chrome-stable &
+conky &
