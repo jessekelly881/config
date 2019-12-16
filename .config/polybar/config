@@ -22,7 +22,7 @@ background = white
 foreground = ${colors.background}
 linecolor = ${colors.secondary}
 
-modules-left = keyboard packages hd cpu memory battery weather music date
+modules-left = keyboard hd cpu memory packages battery weather music date
 
 [module/date]
 format-background =${xrdb:color1}
@@ -44,7 +44,7 @@ format-padding = 1
 type = internal/memory
 interval = .5
 format-background = ${xrdb:color2}
-label = %percentage_used%
+label =  %percentage_used%
 
 [module/ip]
 type = custom/script
@@ -92,10 +92,10 @@ format-padding = 1
 
 [module/weather]
 type = custom/script
-exec = curl -s "wttr.in/?format=3&u"
+exec = curl -s "wttr.in/?format=1&u"
 interval = 30
 format-background = ${xrdb:color7}
-label = %output%
+label = %output%
 format-padding = 1
 
 [module/volume]
@@ -163,7 +163,7 @@ click-left = notify-send "$(yay -Qu -p)"
 format-padding = 1
 interval = 120
 label =  %output%
-format-background = ${xrdb:color4}
+format-background = ${xrdb:color2}
 
 [module/hd]
 type = custom/script
