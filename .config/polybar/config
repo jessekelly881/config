@@ -159,6 +159,7 @@ format-background = ${xrdb:color4}
 [module/packages]
 type = custom/script
 exec = echo "$(pacman -Qe | wc -l)($(yay -Qu -p | wc -l))"
+click-left = notify-send "$(yay -Qu -p)"
 format-padding = 1
 interval = 120
 label =  %output%
