@@ -14,3 +14,5 @@ export PATH=$PATH:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:/opt/tool
 
 #Source Color Scheme.
 source "$HOME/.cache/wal/colors.sh"
+
+fortune -a
