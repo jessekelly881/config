@@ -22,7 +22,7 @@ background = white
 foreground = ${colors.background}
 linecolor = ${colors.secondary}
 
-modules-left = keyboard hd cpu memory packages battery weather music date
+modules-left = cpu memory packages battery weather music date
 
 [module/date]
 format-background =${xrdb:color1}
