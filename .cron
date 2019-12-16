@@ -1,2 +1,3 @@
 0 * * * * pacman -Qqen > ~/.packages # save package list to ~/.packages ever hour
 0 * * * * tree -d ~/media/music > ~/docs/music.txt # save music list(album names only) to ~/docs/music.txt every hour
+0 * * * * yay -Syy # sync package database
