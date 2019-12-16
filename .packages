@@ -67,6 +67,7 @@ parallel
 patch
 picom
 pkgconf
+playerctl
 postgresql
 python
 python-html2text
