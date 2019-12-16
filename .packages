@@ -24,6 +24,7 @@ file
 findutils
 flex
 font-bh-ttf
+fortune-mod
 fuse2
 fzf
 gawk
