@@ -13,6 +13,7 @@
 	r = reset
 	rh = reset --hard
 	rs = reset --soft
+	d = diff
 [user]
 	email = kellyjesse881@gmail.com
 	name = Jesse Kelly
