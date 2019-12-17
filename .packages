@@ -57,6 +57,7 @@ mpd
 mplayer
 mpv
 mtools
+ncdu
 ncmpcpp
 net-tools
 networkmanager
@@ -81,6 +82,7 @@ rofi
 rofimoji
 rsync
 rxvt-unicode
+s3cmd
 scrot
 sed
 sudo
