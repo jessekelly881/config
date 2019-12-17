@@ -7,7 +7,11 @@ set -x
 DAY=$(date +'%w-%a')
 BUCKET="s3://jesse-backup/$DAY/"
 
-s3cmd sync -r ~/docs $BUCKET >  ~/.backup-log
+notify-send "Backup" "Backup started"
+
+s3cmd sync --delete-removed -r ~/docs $BUCKET >>  ~/.backup-log
+s3cmd sync --delete-removed --exclude "**/node_modules/*" --exclude "**/.env/*" --exclude "clones/*" --exclude "**/.cache/*" -r ~/dev $BUCKET >> ~/.backup-log
+
 notify-send "Backup" "Backup completed"
 
 
