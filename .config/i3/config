@@ -37,9 +37,6 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 bindsym Print exec . $HOME/.config/i3/scripts/screenshot.sh
 
-# Custom bindings
-bindsym $mod+p exec rofi -modi "clipboard:greenclip print" -show clipboard
-
 # Movement bindings
 bindsym $mod+h split h
 bindsym $mod+v split v

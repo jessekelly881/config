@@ -3,7 +3,6 @@ setxkbmap -option caps:swapescape #ESC -> CAPS
 
 compton --respect-prop-shadow &
 xbanish &
-greenclip daemon &
 xautolock -time 10 -locker "i3lock-fancy -g" &
 
 python -m pywal -R &
