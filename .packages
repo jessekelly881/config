@@ -38,6 +38,7 @@ groff
 grub
 gzip
 highlight
+hping
 htop
 i3-gaps
 i3lock-color
@@ -62,6 +63,7 @@ ncdu
 ncmpcpp
 net-tools
 networkmanager
+nmap
 noto-fonts
 npm
 os-prober
@@ -103,6 +105,7 @@ texlive-pictures
 texlive-pstricks
 texlive-publishers
 texlive-science
+thc-ipv6
 the_silver_searcher
 tmux
 tree
@@ -116,6 +119,7 @@ ttf-hack
 ttf-junicode
 ttf-ubuntu-font-family
 unzip
+vi
 vim
 w3m
 which
