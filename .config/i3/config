@@ -1,8 +1,12 @@
+# Base settings
+set $mod Mod4
+
+# Aesthetics
 gaps inner 5
 gaps outer 5
-
 default_border pixel 0
 new_window none
+font pango:DejaVu Sans Mono 8
 
 for_window [class="^.*"] border pixel 0
 for_window [class="URxvt"] floating enable
@@ -12,12 +16,6 @@ exec $HOME/.config/boot.sh
 exec $HOME/.config/polybar/launch.sh
 
 
-font pango:DejaVu Sans Mono 8
-set $mod Mod4
-
-font pango:monospace 8
-
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
