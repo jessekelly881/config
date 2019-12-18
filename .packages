@@ -66,10 +66,12 @@ networkmanager
 nmap
 noto-fonts
 npm
+openssh
 os-prober
 p7zip
 pacman
 parallel
+pass
 patch
 picom
 pkgconf
