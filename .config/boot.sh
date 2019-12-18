@@ -4,6 +4,7 @@ setxkbmap -option caps:swapescape #ESC -> CAPS
 compton --respect-prop-shadow &
 xbanish &
 xautolock -time 10 -locker "i3lock-fancy -g" &
+xmodmap -e "pointer = 1 25 3 4 5 6 7 8 9" # disable middle curser button. super annoying default behavior
 
 python -m pywal -R &
 source "$HOME/.cache/wal/colors.sh" # Source color scheme
