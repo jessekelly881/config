@@ -17,6 +17,7 @@ dunst
 efibootmgr
 elinks
 emacs
+entr
 expect
 fakeroot
 feh
@@ -95,6 +96,7 @@ texlive-fontsextra
 texlive-formatsextra
 texlive-games
 texlive-humanities
+texlive-langgreek
 texlive-latexextra
 texlive-music
 texlive-pictures
@@ -171,4 +173,5 @@ xsel
 xterm
 youtube-dl
 zathura
+zathura-pdf-poppler
 zsh
