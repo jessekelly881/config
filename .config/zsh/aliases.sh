@@ -19,6 +19,11 @@ alias q="exit"
 alias Q="echo \"Shutting Down..\"; sudo -k shutdown now"
 alias x="sudo systemctl suspend-then-hibernate"
 
+# accounting
+export LEDGER_FILE="$HOME/docs/personal/accounting/transactions.ledger"
+alias led="ledger -f $LEDGER_FILE"
+alias networth="ledger -f $LEDGER_FILE balance Assets Liabilities"
+
 alias done='notify-send -u critical "The Thing Is Done"'
 alias mount=". /home/jesse/.config/scripts/mount.sh"
 alias cat="bat"
