@@ -84,6 +84,7 @@ python-pip
 python-pyalsa
 qt5-base
 ranger
+remind
 rofi
 rofimoji
 rsync
