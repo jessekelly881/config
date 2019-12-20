@@ -142,7 +142,6 @@ xorg-luit
 xorg-mkfontscale
 xorg-server
 xorg-server-devel
-xorg-server-xdmx
 xorg-server-xephyr
 xorg-server-xnest
 xorg-server-xvfb
