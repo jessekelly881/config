@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "Initializing submodules..."
+yadm submodule update --recursive --init
