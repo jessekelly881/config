@@ -6,6 +6,8 @@ base
 bat
 binutils
 bison
+bluez
+bluez-utils
 cmus
 conky
 cronie
@@ -23,6 +25,7 @@ fakeroot
 feh
 file
 findutils
+firejail
 flex
 font-bh-ttf
 fortune-mod
@@ -78,11 +81,13 @@ picom
 pkgconf
 playerctl
 postgresql
+pulseaudio
 python
 python-html2text
 python-pip
 python-pyalsa
 qt5-base
+qt5-tools
 ranger
 remind
 rofi
