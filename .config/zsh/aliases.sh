@@ -31,6 +31,7 @@ alias news="newsboat"
 export LEDGER_FILE="$HOME/docs/personal/accounting/transactions.ledger"
 alias led="ledger -f $LEDGER_FILE"
 alias networth="ledger -f $LEDGER_FILE balance Assets Liabilities"
+alias expenses="ledger -f $LEDGER_FILE balance Expenses"
 
 # web stuff
 alias serve="python -m SimpleHTTPServer 8000"
