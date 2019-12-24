@@ -19,4 +19,5 @@ i3-msg "workspace 2"
 google-chrome-stable &
 conky &
 
-remind -z1 -k'notify-send %s &' $HOME/docs/personal/reminders # reminders
+remind -z1 -k'notify-send %s &' $HOME/docs/personal/reminders & # reminders
+xss-lock -- i3lock-fancy &
