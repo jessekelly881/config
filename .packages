@@ -87,6 +87,7 @@ python
 python-html2text
 python-pip
 python-pyalsa
+python-tensorflow
 qt5-base
 qt5-tools
 remind
@@ -184,6 +185,7 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 xsel
+xss-lock
 xterm
 youtube-dl
 zathura
