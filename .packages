@@ -24,6 +24,7 @@ efibootmgr
 elinks
 emacs
 entr
+exa
 expect
 fakeroot
 feh
@@ -121,6 +122,7 @@ texlive-publishers
 texlive-science
 thc-ipv6
 the_silver_searcher
+tldr
 tmux
 tree
 ttf-anonymous-pro
