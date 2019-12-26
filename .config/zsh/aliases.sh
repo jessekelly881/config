@@ -51,5 +51,4 @@ if [[ -x `which grc` ]]; then
 	  alias cvs='grc cvs'
 	  alias gcc='grc gcc'
 	  alias configure='grc ./configure'
-	  alias cat="grc cat"
 fi
