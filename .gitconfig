@@ -14,7 +14,7 @@
 	rh = reset --hard
 	rs = reset --soft
 	d = diff
-  A = !git status -s | cut -c4- | fzf --height 40% --color=bw --reverse --border -m --preview 'git diff -- {}' | xargs git add
+  A = !git status -s | cut -c4- | fzf --height 60% --color=bw --reverse --border -m --preview 'git diff -- {}' | xargs git add
 [user]
 	email = kellyjesse881@gmail.com
 	name = Jesse Kelly

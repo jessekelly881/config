@@ -3,7 +3,7 @@ alias cat="bat"
 alias du="ncdu --color dark"
 alias mount=". /home/jesse/.config/scripts/mount.sh"
 
-alias conf="yadm ls-tree --name-only -r HEAD $HOME | fzf --height 40% --color=bw --reverse --border --preview 'bat {}' | xargs -r emacsclient -t"
+alias conf="yadm ls-tree --name-only -r HEAD $HOME | fzf --height 60% --color=bw --reverse --border --preview 'bat {}' | xargs -r emacsclient -t"
 
 # quick access
 alias c="clear"
