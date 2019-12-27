@@ -14,7 +14,6 @@ font pango:DejaVu Sans Mono 8
 for_window [class="^.*"] border pixel 0
 for_window [class="URxvt"] floating enable
 for_window[class="urxvt"] resize set 840 580
-for_window[class="mpv"] resize set 550 450
 
 # Boot scripts
 exec $HOME/.config/boot.sh
@@ -100,6 +99,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # Modes
 mode "resize" {
         bindsym 1 resize set width 400 px height 575 px
+        bindsym 2 resize set 550 450
 
         bindsym j resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
