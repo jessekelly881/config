@@ -14,6 +14,7 @@ font pango:DejaVu Sans Mono 8
 for_window [class="^.*"] border pixel 0
 for_window [class="URxvt"] floating enable
 for_window[class="urxvt"] resize set 840 580
+for_window[class="mpv"] resize set 550 450
 
 # Boot scripts
 exec $HOME/.config/boot.sh
@@ -30,6 +31,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 bindsym $mod+r mode "resize"
 bindsym $mod+x exec . $HOME/.config/i3/scripts/passwords.sh
+bindsym $mod+w sticky toggle
 
 # Meta bindings
 bindsym XF86AudioRaiseVolume exec --no-startup-id playerctl volume 0.05+
