@@ -1,0 +1,10 @@
+set sendmail="/usr/bin/msmtp"
+set use_from=yes
+set realname="Jesse"
+set from=kellyjesse881@gmail.com
+set envelope_from=yes
+set rfc2047_parameters=yes
+set charset="utf-8"
+set send_charset="gb2312"
+set send_charset="utf-8"
+set send_charset="us-ascii:gbk:utf-8"
