@@ -1,11 +1,13 @@
 acpi
 acpid
 alsa-utils
+arch-install-scripts
 archlinux-wallpaper
 autoconf
 automake
 base
 bat
+bind-tools
 binutils
 bison
 bluez
@@ -16,6 +18,7 @@ cronie
 cups
 diff-so-fancy
 dina-font
+dnsmasq
 docker
 docker-compose
 dosfstools
@@ -63,6 +66,7 @@ linux-firmware
 lynx
 m4
 make
+metasploit
 mpc
 mpd
 mplayer
@@ -94,6 +98,8 @@ python-html2text
 python-pip
 python-pyalsa
 python-tensorflow
+qemu
+qrencode
 qt5-base
 qt5-tools
 remind
