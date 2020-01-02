@@ -5,7 +5,7 @@ COUNTRY=Mexico
 
 # update mirror lists(should improve install speed)
 pacman -S --noconfirm reflector
-reflector --country "$COUNTRY" --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+reflector --latest 5 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
 # setup drive
 sgdisk --zap-all $DRIVE
