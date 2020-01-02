@@ -76,7 +76,7 @@ sed -i s+LABEL=swap+/dev/mapper/swap+ /mnt/etc/fstab
 echo "cryptswap        /dev/disk/by-partlabel/cryptswap        /dev/urandom        swap,offset=2048,cipher=aes-xts-plain64,size=256" >> /etc/crypttab
 
 # boot into the system
-echo "pts/0" >> /etc/securetty # should allow root login after booting into system
+echo "pts/0" >> /mnt/etc/securetty # should allow root login after booting into system
 systemd-nspawn -bD /mnt
 
 #--------------------------------------------------------------------------------
