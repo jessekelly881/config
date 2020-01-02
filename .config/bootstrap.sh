@@ -4,7 +4,7 @@
 COUNTRY=Mexico
 
 # update mirror lists(should improve install speed)
-pacman -S --noconfirm reflector
+pacman -Sy --noconfirm reflector
 reflector --latest 5 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
 # setup drive
