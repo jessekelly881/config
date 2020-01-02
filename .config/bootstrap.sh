@@ -10,7 +10,7 @@ TIMEZONE=America/Mexico_City
 USERNAME=jesse
 
 #--------------------------------------------------------------------------------
-Install arch
+# Install arch
 #--------------------------------------------------------------------------------
 
 # setup drive
@@ -80,7 +80,7 @@ echo "pts/0" >> /mnt/etc/securetty # should allow root login after booting into 
 systemd-nspawn -bD /mnt
 
 #--------------------------------------------------------------------------------
-Post install
+# Post install
 #--------------------------------------------------------------------------------
 
 # set locale and datetime
