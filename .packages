@@ -12,13 +12,13 @@ binutils
 bison
 bluez
 bluez-utils
+btrfs-progs
 cmus
 conky
 cronie
 cups
 diff-so-fancy
 dina-font
-dnsmasq
 docker
 docker-compose
 dosfstools
@@ -86,6 +86,7 @@ os-prober
 p7zip
 pacman
 parallel
+parted
 pass
 patch
 picom
