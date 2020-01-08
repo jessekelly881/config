@@ -25,7 +25,6 @@ dosfstools
 dunst
 efibootmgr
 elinks
-emacs
 entr
 exa
 expect
@@ -64,6 +63,7 @@ lightdm
 lightdm-gtk-greeter
 linux
 linux-firmware
+luarocks
 lynx
 m4
 make
@@ -84,6 +84,7 @@ noto-fonts
 npm
 openssh
 os-prober
+ovmf
 p7zip
 pacman
 parallel
@@ -99,8 +100,11 @@ pulseaudio
 python
 python-html2text
 python-language-server
+python-mccabe
 python-pip
 python-pyalsa
+python-pycodestyle
+python-pyflakes
 python-tensorflow
 qemu
 qrencode
