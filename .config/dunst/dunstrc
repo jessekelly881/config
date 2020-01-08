@@ -12,3 +12,6 @@
   forground = #000000
   summary = "*"
   script = ~/.config/dunst/dunst.sh
+
+[shortcuts]
+    close = ctrl+space
