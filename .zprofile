@@ -5,6 +5,9 @@ fi
 # editor
 export EDITOR="emacsclient -t"
 
+# performance
+export TZ=:/etc/localtime # https://blog.packagecloud.io/eng/2017/02/21/set-environment-variable-save-thousands-of-system-calls/
+
 # java
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 
