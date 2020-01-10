@@ -12,11 +12,13 @@ binutils
 bison
 bluez
 bluez-utils
+bsd-games
 btrfs-progs
 cmus
 conky
 cronie
 cups
+dart
 diff-so-fancy
 dina-font
 docker
@@ -26,6 +28,7 @@ dunst
 efibootmgr
 elinks
 entr
+evtest
 exa
 expect
 fakeroot
@@ -57,6 +60,7 @@ imagemagick
 jdk8-openjdk
 krita
 ledger
+lesspipe
 lib32-freetype2
 libtool
 lightdm
@@ -101,7 +105,6 @@ python
 python-html2text
 python-language-server
 python-mccabe
-python-pip
 python-pyalsa
 python-pycodestyle
 python-pyflakes
@@ -110,6 +113,7 @@ qemu
 qrencode
 qt5-base
 qt5-tools
+qutebrowser
 reflector
 remind
 rofi
@@ -121,6 +125,7 @@ scrot
 sdl
 sed
 sshfs
+strace
 sudo
 surf
 synergy
