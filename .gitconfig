@@ -2,7 +2,8 @@
   a = !git status -s | cut -c4- | fzf --height 60% --color=bw --reverse --border -m --preview 'git diff -- {}' | xargs -r git add
 	s = status -s
 	c = commit
-  co = !git for-each-ref --format='%(refname:short)' refs/heads | fzf --prompt "Checkout: " --height 60% --color=bw --reverse --border | xargs -r git checkout
+	co = checkout
+  com = !git for-each-ref --format='%(refname:short)' refs/heads | fzf --prompt "Checkout: " --height 60% --color=bw --reverse --border | xargs -r git checkout
 	cm = commit -m
 	t = touch
 	last = show HEAD
