@@ -16,7 +16,7 @@ dunst -lb "$color1" -nb "$color2" -hb "$color3" -lf "#000000" -mf "#000000" -bf 
 # Post setup launch programs
 urxvt -e tmux attach &
 i3-msg "workspace 2"
-google-chrome-stable &
+qutebrowser &
 conky -c $HOME/.config/conky/system.conf &
 conky -c $HOME/.config/conky/personal.conf &
 
