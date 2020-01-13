@@ -22,6 +22,7 @@ alias yi="yay -S"
 alias q="exit"
 alias Q="echo \"Shutting Down..\"; sudo -k shutdown now"
 alias x="sudo systemctl suspend-then-hibernate"
+alias y="youtube-dl --exec \"mpv {}\" -o \"$HOME/media/videos/youtube/%(title)s.%(ext)s\""
 
 # useful shortcuts
 alias note="$EDITOR /home/jesse/docs/notes.org"
@@ -50,6 +51,4 @@ if [[ -x `which grc` ]]; then
 	  alias gcc='grc gcc'
 	  alias configure='grc configure'
 	  alias cvs='grc cvs'
-	  alias gcc='grc gcc'
-	  alias configure='grc ./configure'
 fi
