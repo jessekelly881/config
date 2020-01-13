@@ -3,4 +3,4 @@
 config.load_autoconfig()
 
 # bindings
-config.bind(',v', 'spawn mpv {url}')
+config.bind(',v', 'hint links spawn mpv {hint-url}')

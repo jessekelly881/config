@@ -18,6 +18,10 @@ settings:
     global: white
   colors.statusbar.command.fg:
     global: white
+  downloads.location.directory:
+    global: /home/jesse/inbox
+  downloads.location.prompt:
+    global: false
   statusbar.hide:
     global: true
   tabs.show:
