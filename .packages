@@ -101,6 +101,7 @@ plasma-workspace-wallpapers
 playerctl
 postgresql
 pulseaudio
+pypy
 python
 python-html2text
 python-language-server
