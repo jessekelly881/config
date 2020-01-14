@@ -35,6 +35,8 @@ c.colors.hints.bg = pyColors["color1"]
 c.colors.hints.fg = WHITE
 c.colors.hints.match.fg = pyColors["color1"]
 
+c.colors.completion.match.fg = pyColors["color6"]
+
 config.load_autoconfig()
 
 # bindings
