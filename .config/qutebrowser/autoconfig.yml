@@ -22,6 +22,12 @@ settings:
     global: /home/jesse/inbox
   downloads.location.prompt:
     global: false
+  downloads.open_dispatcher:
+    global: rifle
+  fonts.monospace:
+    global: '"Fantasque Sans Mono:size=9", Monospace, "DejaVu Sans Mono", Monaco,
+      "Bitstream Vera Sans Mono", "Andale Mono", "Courier New", Courier, "Liberation
+      Mono", monospace, Fixed, Consolas, Terminal'
   hints.border:
     global: '0px solid #E3BE23'
   statusbar.hide:

@@ -42,8 +42,15 @@ c.colors.downloads.start.fg = WHITE
 c.colors.downloads.stop.bg = pyColors["color2"]
 c.colors.downloads.stop.fg = WHITE
 
+c.colors.messages.info.bg = pyColors["color1"]
+c.colors.messages.info.fg = WHITE
+c.colors.messages.error.bg = pyColors["color1"]
+c.colors.messages.error.fg = WHITE
+c.colors.messages.warning.bg = pyColors["color1"]
+c.colors.messages.warning.fg = WHITE
+
 config.load_autoconfig()
 
 # bindings
 config.bind(',v', 'hint links spawn mpv {hint-url}')
-config.bind(',o', 'open -t https://outline.com/{hint-url}')
+config.bind(',o', 'open -t https://outline.com/{url}')
