@@ -14,14 +14,25 @@ with open(pywalPath) as stream:
 pyColors = pywalData["colors"]
 
 c.colors.completion.category.bg = pyColors["color0"]
+c.colors.completion.category.fg = WHITE
+c.colors.completion.category.border.bottom = pyColors["color0"]
 c.colors.completion.category.fg = pyColors["color1"]
 c.colors.completion.even.bg = pyColors["color1"]
 c.colors.completion.odd.bg = pyColors["color2"]
+
 c.colors.completion.item.selected.fg = WHITE
 c.colors.completion.item.selected.bg = pyColors["color4"]
+c.colors.completion.item.selected.border.top = pyColors["color4"]
+c.colors.completion.item.selected.border.bottom = pyColors["color4"]
 
-c.colors.completion.item.selected.bg
+c.colors.statusbar.url.error.fg = pyColors["color2"]
+c.colors.statusbar.url.success.https.fg = pyColors["color2"]
+c.colors.statusbar.url.success.http.fg = pyColors["color2"]
+c.colors.statusbar.url.warn.fg = pyColors["color2"]
+c.colors.statusbar.url.hover.fg = pyColors["color2"]
 
+c.colors.hints.bg = pyColors["color1"]
+c.colors.hints.fg = WHITE
 
 config.load_autoconfig()
 

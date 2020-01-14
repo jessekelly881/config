@@ -22,6 +22,8 @@ settings:
     global: /home/jesse/inbox
   downloads.location.prompt:
     global: false
+  hints.border:
+    global: '0px solid #E3BE23'
   statusbar.hide:
     global: true
   tabs.show:
