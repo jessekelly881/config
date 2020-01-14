@@ -33,6 +33,7 @@ c.colors.statusbar.url.hover.fg = pyColors["color2"]
 
 c.colors.hints.bg = pyColors["color1"]
 c.colors.hints.fg = WHITE
+c.colors.hints.match.fg = pyColors["color1"]
 
 config.load_autoconfig()
 
