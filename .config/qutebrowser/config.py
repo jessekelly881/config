@@ -49,6 +49,9 @@ c.colors.messages.error.fg = WHITE
 c.colors.messages.warning.bg = pyColors["color1"]
 c.colors.messages.warning.fg = WHITE
 
+c.colors.contextmenu.menu.bg = WHITE
+c.colors.contextmenu.menu.fg = pyColors["color2"]
+
 config.load_autoconfig()
 
 # bindings

@@ -12,10 +12,6 @@ settings:
     global:
       normal:
         xn: notify-send "test" "test"
-  colors.contextmenu.menu.fg:
-    global: red
-  colors.contextmenu.selected.fg:
-    global: white
   colors.statusbar.command.fg:
     global: white
   downloads.location.directory:
@@ -24,6 +20,8 @@ settings:
     global: false
   downloads.open_dispatcher:
     global: rifle
+  fonts.contextmenu:
+    global: Fantasque Sans Mono:size=9
   fonts.monospace:
     global: '"Fantasque Sans Mono:size=9", Monospace, "DejaVu Sans Mono", Monaco,
       "Bitstream Vera Sans Mono", "Andale Mono", "Courier New", Courier, "Liberation
