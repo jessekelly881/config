@@ -110,6 +110,7 @@ python-pyalsa
 python-pycodestyle
 python-pyflakes
 python-tensorflow
+python-tldextract
 qemu
 qrencode
 qt5-base
