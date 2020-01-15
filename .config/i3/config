@@ -4,8 +4,9 @@ floating_modifier $mod
 set $refresh_i3status killall -SIGUSR1 i3status
 
 # Aesthetics
-gaps inner 5
+gaps inner 10
 gaps outer 5
+gaps top 0 # compensate for polybar
 default_border pixel 0
 new_window none
 font pango:DejaVu Sans Mono 8
@@ -29,6 +30,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 bindsym $mod+r mode "resize"
+bindsym $mod+g mode "gaps"
 bindsym $mod+x exec . $HOME/.config/i3/scripts/passwords.sh
 bindsym $mod+w sticky toggle
 
@@ -96,7 +98,7 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-# Modes
+# Resize mode
 mode "resize" {
         bindsym 1 resize set width 400 px height 575 px
         bindsym 2 resize set 550 450
@@ -114,4 +116,17 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
+}
+
+
+mode "gaps" {
+
+        bindsym h gaps outer current minus 5
+        bindsym l gaps outer current plus 5
+        bindsym k gaps inner current minus 5
+        bindsym j gaps inner current plus 5
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+g mode "default"
 }
