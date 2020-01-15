@@ -121,10 +121,10 @@ mode "resize" {
 
 mode "gaps" {
 
-        bindsym h gaps outer current minus 5
-        bindsym l gaps outer current plus 5
-        bindsym k gaps inner current minus 5
-        bindsym j gaps inner current plus 5
+        bindsym h gaps outer current minus 1
+        bindsym l gaps outer current plus 1
+        bindsym k gaps inner current minus 1
+        bindsym j gaps inner current plus 1
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
