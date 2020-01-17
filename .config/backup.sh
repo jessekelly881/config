@@ -1,23 +1,12 @@
 #!/usr/bin/env bash
+# 0 */2 * * * . ~/.config/backup.sh
+
 set -x
-
-# this will create daily folders and sync to them.
-# after a full week it will begin to sync over folders from last week
-# this gives a nice incrimental backup along side a synced backup.
-DAY=$(date +'%w-%a')
-BUCKET="s3://jesse-backup/$DAY/"
-
 notify-send "Backup" "Backup started"
 
-s3cmd sync --delete-removed -r ~/docs $BUCKET >>  ~/.backup-log
-s3cmd sync --delete-removed --exclude "**/node_modules/*" --exclude "**/.env/*" --exclude "clones/*" --exclude "**/.cache/*" -r ~/dev $BUCKET >> ~/.backup-log
+# music
+MUSIC_BUCKET="s3://jesse-music/"
+MUSIC_FOLDER="$HOME/media/music"
+s3cmd sync -r $MUSIC_FOLDER $MUSIC_BUCKET >>  ~/.backup-log
 
 notify-send "Backup" "Backup completed"
-
-
-
-
-
-# currently only backing up docs folder
-# this script needs expanded to sync everything.
-# say everyting in ~/.config/sync
