@@ -18,6 +18,16 @@ export PATH=$PATH:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:/opt/tool
 #Source Color Scheme.
 source "$HOME/.cache/wal/colors.sh"
 
+# autojump
 source /etc/profile.d/autojump.zsh
+
+# less color codes(make less pretty)
+export LESS_TERMCAP_mb=$'\e[1;32m'
+export LESS_TERMCAP_md=$'\e[1;32m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[01;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;4;31m'
 
 fortune -a
