@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 
-DATE="$(date +'%F')"
+YEAR="$(date +'%Y')"
+MONTH="$(date +'%m(%b)')"
+DAY="$(date +'%d(%a)')"
 TIME="$(date +'%T')"
 
-FOLDER="$HOME/media/screenshots/$DATE"
+FOLDER="$HOME/media/screenshots/$YEAR/$MONTH/$DAY"
 FILE="$FOLDER/$TIME.jpg"
-mkdir $FOLDER
+mkdir -p $FOLDER
 
 scrot "$FILE"
 notify-send "Screenshot" "Screen shot saved: $FILE"
