@@ -54,6 +54,8 @@ c.colors.contextmenu.menu.fg = pyColors["color2"]
 
 config.load_autoconfig()
 
+c.editor.command = ['emacsclient', '{}']
+
 # bindings
 config.bind(',v', 'hint links spawn mpv {hint-url}')
 config.bind(',o', 'open -t https://outline.com/{url}')
