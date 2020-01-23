@@ -102,9 +102,12 @@ picom
 pkgconf
 plasma-workspace-wallpapers
 playerctl
+pngcrush
+pngquant
 postgresql
 pulseaudio
 pypy
+pypy3
 python
 python-html2text
 python-language-server
@@ -119,6 +122,8 @@ qrencode
 qt5-base
 qt5-tools
 qutebrowser
+redis
+redshift
 reflector
 remind
 rofi
