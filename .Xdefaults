@@ -12,3 +12,8 @@ URxvt*font: xft:Fantasque Sans Mono:size=9:antialias=true:hinting:true, xft:Noto
 URxvt*cursorColor: {cursor}
 URxvt.geometry: 90x52
 URxvt*letterSpace: 0
+
+URxvt.perl-lib: /usr/lib/urxvt/perl/
+URxvt.perl-ext-common: default,url-select,tabbedex,matcher,keyboard-select,font-size
+URxvt.keysym.C-Up:     perl:font-size:increase
+URxvt.keysym.C-Down:   perl:font-size:decrease
