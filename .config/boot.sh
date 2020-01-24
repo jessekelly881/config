@@ -22,3 +22,5 @@ conky -c $HOME/.config/conky/personal.conf &
 
 remind -z1 -k'notify-send %s &' $HOME/docs/personal/reminders & # reminders
 xss-lock -- i3lock-fancy &
+
+redshift -t 5700:3700 &
