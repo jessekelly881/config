@@ -52,3 +52,7 @@ if [[ -x `which grc` ]]; then
 	  alias configure='grc configure'
 	  alias cvs='grc cvs'
 fi
+
+lmgt(){
+    echo "$(echo 'http://letmegooglethat.com/?q='$@ | sed -e 's/ /+/g')" | xsel -ibo
+}
