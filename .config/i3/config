@@ -5,8 +5,8 @@ set $refresh_i3status killall -SIGUSR1 i3status
 
 # Aesthetics
 gaps inner 10
-gaps outer 5
-gaps top 0 # compensate for polybar
+gaps outer 3
+gaps top -2 # compensate for polybar
 default_border pixel 0
 new_window none
 font pango:DejaVu Sans Mono 8
