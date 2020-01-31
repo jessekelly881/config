@@ -14,6 +14,8 @@ settings:
         xn: notify-send "test" "test"
   colors.statusbar.command.fg:
     global: white
+  content.geolocation:
+    http://localhost:8100: true
   downloads.location.directory:
     global: /home/jesse/inbox
   downloads.location.prompt:
