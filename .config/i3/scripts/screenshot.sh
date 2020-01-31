@@ -9,7 +9,20 @@ FOLDER="$HOME/media/screenshots/$YEAR/$MONTH/$DAY"
 FILE="$FOLDER/$TIME.jpg"
 mkdir -p $FOLDER
 
-scrot "$FILE"
+case $@ in
+    window)
+        scrot -u "$FILE"
+        ;;
+
+    full)
+        scrot "$FILE"
+        ;;
+
+    *)
+        scrot "$FILE"
+        ;;
+    esac
+
 notify-send "Screenshot" "Screen shot saved: $FILE"
 
 # symlink for easy access

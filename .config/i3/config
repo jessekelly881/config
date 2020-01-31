@@ -37,7 +37,8 @@ bindsym $mod+w sticky toggle
 bindsym XF86AudioRaiseVolume exec --no-startup-id playerctl volume 0.05+
 bindsym XF86AudioLowerVolume exec --no-startup-id playerctl volume 0.05-
 bindsym XF86AudioMute exec --no-startup-id playerctl play-pause
-bindsym Print exec . $HOME/.config/i3/scripts/screenshot.sh
+bindsym Print exec . $HOME/.config/i3/scripts/screenshot.sh full
+bindsym Shift+Print exec . $HOME/.config/i3/scripts/screenshot.sh window
 
 # Movement bindings
 bindsym $mod+Shift+h split h
