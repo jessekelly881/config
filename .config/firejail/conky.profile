@@ -16,7 +16,7 @@ include disable-xdg.inc
 
 include whitelist-usr-share-common.inc
 
-caps.drop all
+caps.keep net_raw
 ipc-namespace
 netfilter
 no3d
