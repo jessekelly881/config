@@ -64,6 +64,8 @@ i3-gaps
 i3lock-color
 imagemagick
 jdk8-openjdk
+john
+kismet
 krita
 ledger
 lesspipe
@@ -119,8 +121,10 @@ python-mccabe
 python-pyalsa
 python-pycodestyle
 python-pyflakes
+python-sympy
 python-tensorflow
 python-tldextract
+python-wikipedia
 qemu
 qrencode
 qt5-base
@@ -163,6 +167,7 @@ thc-ipv6
 the_silver_searcher
 tldr
 tmux
+traceroute
 tree
 ttf-anonymous-pro
 ttf-bitstream-vera
