@@ -53,6 +53,5 @@ if [[ -x `which grc` ]]; then
 	  alias cvs='grc cvs'
 fi
 
-lmgt(){
-    echo "$(echo 'http://letmegooglethat.com/?q='$@ | sed -e 's/ /+/g')" | xsel -ibo
-}
+alias paths="echo $PATH | sed 's/:/\n/g'"
+alias peers="nmap -sn 192.168.1.1-255 | grep -oP '192.*[1-9]'"

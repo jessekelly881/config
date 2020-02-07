@@ -103,7 +103,7 @@ plugins=(
 )
 
 source  $HOME/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
-source $HOME/.config/zsh/aliases.sh
+source $HOME/.config/zsh/all.sh
 
 export HISTSIZE=100000
 export HISTFILESIZE=100000
