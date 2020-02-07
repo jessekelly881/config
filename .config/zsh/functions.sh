@@ -15,3 +15,7 @@ lmgt(){
 base(){
     echo "ibase=$1; obase=$2; $3" | bc
 }
+
+speed(){
+    speedtest-cli | awk -F ': ' '/Download/{print "↓", $2} /Upload/{print "↑", $2}'
+}
