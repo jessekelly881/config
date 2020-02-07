@@ -7,3 +7,11 @@ lmgt(){
     echo "$(echo $URL )" | xsel -ib
     echo $URL
 }
+
+# Change of base
+# $1: from base
+# $2: to base
+# $3: number
+base(){
+    echo "ibase=$1; obase=$2; $3" | bc
+}
