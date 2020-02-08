@@ -142,6 +142,7 @@ s3cmd
 scrot
 sdl
 sed
+speedtest-cli
 sshfs
 steam
 steam-native-runtime
@@ -184,6 +185,7 @@ vi
 vim
 w3m
 which
+whois
 wine
 xautolock
 xf86-video-vesa
