@@ -19,3 +19,7 @@ base(){
 speed(){
     speedtest-cli | awk -F ': ' '/Download/{print "↓", $2} /Upload/{print "↑", $2}'
 }
+
+movies(){
+    curl -s https://cinemex.com/ | pup ".movies-grid-title text{}" | head -n15 | sort
+}
