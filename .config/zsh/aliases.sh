@@ -55,3 +55,4 @@ fi
 
 alias paths="echo $PATH | sed 's/:/\n/g'"
 alias peers="nmap -sn 192.168.1.1-255 | grep -oP '192.*[1-9]'"
+alias reddit="rtv"
