@@ -11,6 +11,7 @@
 	p = push -u
 	w = !watch -c -n1 -x unbuffer git status -s
 	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s' --abbrev-commit --date=relative
+	lb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s' --abbrev-commit --date=relative master..
 	r = reset
 	rh = reset --hard
 	rs = reset --soft
@@ -24,3 +25,6 @@
 	helper = store
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
+[github]
+	user = jessekelly881
+	oauth-token = 9d9958c23655be9418557553dd370153d1ea95c6
