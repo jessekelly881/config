@@ -48,6 +48,7 @@ fzf
 gawk
 gcc
 gettext
+gimp
 git
 git-latexdiff
 gnu-free-fonts
@@ -60,13 +61,13 @@ gzip
 highlight
 hping
 htop
+httpie
 i3-gaps
 i3lock-color
 imagemagick
 jdk8-openjdk
 john
 kismet
-krita
 ledger
 lesspipe
 lib32-freetype2
@@ -115,9 +116,13 @@ pulseaudio
 pypy
 pypy3
 python
+python-faker
+python-flask
+python-geopy
 python-html2text
 python-language-server
 python-mccabe
+python-pandas
 python-pyalsa
 python-pycodestyle
 python-pyflakes
@@ -125,6 +130,7 @@ python-sympy
 python-tensorflow
 python-tldextract
 python-wikipedia
+python-wxpython
 qemu
 qrencode
 qt5-base
@@ -137,6 +143,7 @@ remind
 rofi
 rofimoji
 rsync
+rtv
 rxvt-unicode
 s3cmd
 scrot
@@ -166,6 +173,7 @@ texlive-publishers
 texlive-science
 thc-ipv6
 the_silver_searcher
+tig
 tldr
 tmux
 traceroute
