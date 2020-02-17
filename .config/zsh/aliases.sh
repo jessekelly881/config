@@ -25,7 +25,6 @@ alias x="sudo systemctl suspend-then-hibernate"
 alias y="youtube-dl --exec \"mpv {}\" -o \"$HOME/media/videos/youtube/%(title)s.%(ext)s\""
 
 # useful shortcuts
-alias note="$EDITOR /home/jesse/docs/notes.org"
 alias cpass="openssl rand -base64 20"
 alias news="newsboat"
 
