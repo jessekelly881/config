@@ -1,8 +1,10 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.config/scripts:$PATH
+export PATH=$HOME/dev/projects/notes:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/jesse/.oh-my-zsh"
+export NOTES_HEADER="-*- mode: org -*-"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
