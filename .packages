@@ -101,6 +101,7 @@ os-prober
 ovmf
 p7zip
 pacman
+pandoc
 parallel
 parted
 pass
