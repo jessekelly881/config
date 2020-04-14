@@ -35,7 +35,7 @@ alias networth="ledger -f $LEDGER_FILE balance Assets Liabilities"
 alias expenses="ledger -f $LEDGER_FILE balance Expenses"
 
 # web stuff
-alias serve="python -m SimpleHTTPServer 8000"
+alias serve="python2 -m SimpleHTTPServer 8000"
 alias ipg="curl ipinfo.io/ip"
 alias up="ping -q -w 1 -c 1 `ip r | grep -m 1 default | cut -d ' ' -f 3` >/dev/null && echo 'Connected' || echo 'Not Connected'"
 
