@@ -15,7 +15,7 @@
 	r = reset
 	rh = reset --hard
 	rs = reset --soft
-	d = diff
+	d = "!f() { git diff --ignore-all-space -- $1 ':(exclude)*yarn.lock' ':!**package-lock.json'; }; f"
 [user]
 	email = kellyjesse881@gmail.com
 	name = Jesse Kelly
@@ -28,3 +28,8 @@
 [github]
 	user = jessekelly881
 	oauth-token = 9d9958c23655be9418557553dd370153d1ea95c6
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
