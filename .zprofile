@@ -15,6 +15,9 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 GRADLE_VERSION=4.10.2
 export PATH=$PATH:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:/opt/tools:/opt/gradle/gradle-"$GRADLE_VERSION"/bin
 
+# Git scripts path
+export PATH=$PATH:$HOME/.gitscripts
+
 #Source Color Scheme.
 source "$HOME/.cache/wal/colors.sh"
 
