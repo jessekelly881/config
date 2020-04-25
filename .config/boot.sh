@@ -23,4 +23,4 @@ conky -c $HOME/.config/conky/personal.conf &
 remind -z1 -k'notify-send %s &' $HOME/docs/personal/reminders & # reminders
 xss-lock -- i3lock-fancy &
 
-redshift -t 5700:3700 &
+redshift -t 5700:1000 -l 19.43:99.13 & # cdmx coords
