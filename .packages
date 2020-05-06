@@ -26,6 +26,7 @@ docker
 docker-compose
 dosfstools
 dunst
+edk2-ovmf
 efibootmgr
 electron
 elinks
@@ -50,8 +51,10 @@ gcc
 gettext
 gimp
 git
+git-annex
 git-latexdiff
 gnu-free-fonts
+gparted
 gpick
 grc
 grep
@@ -98,7 +101,6 @@ noto-fonts
 npm
 openssh
 os-prober
-ovmf
 p7zip
 pacman
 pandoc
@@ -128,7 +130,6 @@ python-pyalsa
 python-pycodestyle
 python-pyflakes
 python-sympy
-python-tensorflow
 python-tldextract
 python-wikipedia
 python-wxpython
@@ -142,6 +143,7 @@ redshift
 reflector
 remind
 rofi
+rofi-calc
 rofimoji
 rsync
 rtv
@@ -156,7 +158,6 @@ steam
 steam-native-runtime
 strace
 sudo
-surf
 synergy
 texinfo
 texlive-bibtexextra
@@ -247,6 +248,7 @@ xorg-xwud
 xsel
 xss-lock
 xterm
+yarn
 youtube-dl
 zathura
 zathura-pdf-poppler
