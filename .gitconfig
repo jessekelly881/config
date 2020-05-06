@@ -10,7 +10,9 @@
 	master = checkout master
 	p = push -u
 	w = !watch -c -n1 -x unbuffer git status -s
-	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s' --abbrev-commit --date=relative
+	l = log --oneline
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s' --abbrev-commit --date=relative
+	ld = log --name-status --summary
 	lb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s' --abbrev-commit --date=relative master..
 	r = reset
 	rh = reset --hard
