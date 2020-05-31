@@ -17,7 +17,7 @@
 	r = reset
 	rh = reset --hard
 	rs = reset --soft
-	d = "!f() { git diff --ignore-all-space -- $1 ':(exclude)*yarn.lock' ':!**package-lock.json'; }; f"
+	d = "!f() { git diff --ignore-all-space --ignore-blank-lines -- $1 ':(exclude)*yarn.lock' ':!**package-lock.json'; }; f"
 [user]
 	email = kellyjesse881@gmail.com
 	name = Jesse Kelly
