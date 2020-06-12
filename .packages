@@ -3,6 +3,7 @@ acpid
 alsa-utils
 arch-install-scripts
 archlinux-wallpaper
+aspell-en
 autoconf
 automake
 base
@@ -101,6 +102,7 @@ noto-fonts
 npm
 openssh
 os-prober
+otf-latin-modern
 p7zip
 pacman
 pandoc
@@ -119,6 +121,7 @@ pulseaudio
 pypy
 pypy3
 python
+python-django
 python-faker
 python-flask
 python-geopy
