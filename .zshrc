@@ -1,3 +1,6 @@
+# Remove command lines from the history list when the first character on the line is a space
+setopt HIST_IGNORE_SPACE
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/.config/scripts:$PATH
 export PATH=$HOME/dev/projects/notes:$PATH
