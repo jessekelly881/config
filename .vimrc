@@ -2,6 +2,7 @@
 set nocompatible
 set cursorline
 
+
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
 
@@ -78,6 +79,9 @@ map <leader><space> :let @/=''<cr> " clear search
 inoremap <F1> <ESC>:set invfullscreen<CR>a
 nnoremap <F1> :set invfullscreen<CR>
 vnoremap <F1> :set invfullscreen<CR>
+
+" q to quit
+map q :quit <Enter>
 
 " Textmate holdouts
 
