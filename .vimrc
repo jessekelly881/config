@@ -1,5 +1,6 @@
 " Don't try to be vi compatible
 set nocompatible
+set cursorline
 
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
@@ -22,7 +23,7 @@ set modelines=0
 set number
 
 " Show file stats
-set ruler
+" set ruler
 
 " Blink cursor on error instead of beeping (grr)
 set visualbell
@@ -57,7 +58,7 @@ set hidden
 set ttyfast
 
 " Status bar
-set laststatus=2
+set laststatus=0
 
 " Last line
 set showmode
@@ -89,13 +90,3 @@ set listchars=tab:▸\ ,eol:¬
 " set list " To enable by default
 " Or use your leader key + l to toggle on/off
 map <leader>l :set list!<CR> " Toggle tabs and EOL
-
-" Color scheme (terminal)
-set t_Co=256
-set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-" put https://raw.github.com/altercation/vim-colors-solarized/master/colors/solarized.vim
-" in ~/.vim/colors/ and uncomment:
-" colorscheme solarized
-@DevinJamesK
