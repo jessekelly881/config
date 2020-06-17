@@ -81,7 +81,8 @@ nnoremap <F1> :set invfullscreen<CR>
 vnoremap <F1> :set invfullscreen<CR>
 
 " q to quit
-map q :quit <Enter>
+map q :q <Enter>
+map Q :q <Enter>
 
 " Textmate holdouts
 
