@@ -20,6 +20,7 @@
 	d = "!f() { git diff --ignore-all-space --ignore-blank-lines -- $1 ':(exclude)*yarn.lock' ':!**package-lock.json'; }; f"
 	anx = annex
 	an = annex
+	gi = "!gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ ;}; gi"
 [user]
 	email = kellyjesse881@gmail.com
 	name = Jesse Kelly
