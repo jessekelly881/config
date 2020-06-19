@@ -12,6 +12,7 @@ bind-tools
 binutils
 bison
 bluez
+bluez-hid2hci
 bluez-utils
 bsd-games
 btrfs-progs
@@ -53,6 +54,7 @@ gettext
 gimp
 git
 git-annex
+git-crypt
 git-latexdiff
 gnu-free-fonts
 gparted
