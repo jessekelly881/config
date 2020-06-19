@@ -5,6 +5,7 @@ alias mount=". /home/jesse/.config/scripts/mount.sh"
 alias conf="yadm ls-tree --name-only -r HEAD $HOME | fzf --prompt \"Open config file: \" --height 60% --color=bw --reverse --border --preview 'bat {}' | xargs -r emacsclient -t"
 
 # quick access
+alias n="npm"
 alias c="clear"
 alias C="yadm"
 alias t="touch"
