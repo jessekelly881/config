@@ -13,6 +13,14 @@ xmodmap -e "pointer = 1 25 3 4 5 6 7 8 9" # disable middle curser button. super 
 xbanish & # Hide mouse after keypress
 
 ##
+# Visual config: shaddows, background images, etc.
+##
+compton --respect-prop-shadow &
+oneko -fg "$color1" -tora -tofocus &
+python -m pywal -R &
+source "$HOME/.cache/wal/colors.sh" # Source color scheme
+
+##
 # Background services
 ##
 xautolock -time 10 -locker "i3lock-fancy -g" &
@@ -24,21 +32,20 @@ conky -c $HOME/.config/conky/system.conf &
 conky -c $HOME/.config/conky/personal.conf &
 redshift -t 5700:3000 -l 19.43:-99.13 & # cdmx coords
 
-##
-# Visual config: shaddows, background images, etc.
-##
-compton --respect-prop-shadow &
-oneko -fg "$color1" -tora -tofocus &
-python -m pywal -R &
-source "$HOME/.cache/wal/colors.sh" # Source color scheme
 
 ##
 # Autostart programs
 ##
 urxvt -e tmux attach &
+sleep 1s
 
 i3-msg "workspace 2"
 firefox &
+sleep 2s
 
 i3-msg "workspace 5"
 soulseekqt &
+sleep 1s
+
+
+i3-msg "workspace 1" # Move back to workspace 1. The home workspace.
