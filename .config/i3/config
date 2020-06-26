@@ -29,6 +29,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 bindsym $mod+r mode "resize"
+bindsym $mod+n exec "rofi -dmenu -p 'Journal' >> ~/journal/today.org "
 bindsym $mod+g mode "gaps"
 bindsym $mod+x exec . $HOME/.config/i3/scripts/passwords.sh
 bindsym $mod+w sticky toggle
