@@ -3,6 +3,7 @@ acpid
 alsa-utils
 arch-install-scripts
 archlinux-wallpaper
+aria2
 aspell-en
 autoconf
 automake
@@ -17,6 +18,7 @@ bluez-utils
 bsd-games
 btrfs-progs
 cloc
+clojure
 cmus
 conky
 cronie
@@ -31,7 +33,9 @@ dunst
 edk2-ovmf
 efibootmgr
 electron
+electrum
 elinks
+enscript
 entr
 espeak
 evtest
@@ -68,6 +72,7 @@ highlight
 hping
 htop
 httpie
+hub
 i3-gaps
 i3lock-color
 imagemagick
@@ -75,6 +80,7 @@ jdk8-openjdk
 john
 kismet
 ledger
+leiningen
 lesspipe
 lib32-freetype2
 lib32-nvidia-utils
@@ -119,7 +125,9 @@ playerctl
 pngcrush
 pngquant
 postgresql
+pstotext
 pulseaudio
+pulseaudio-bluetooth
 pypy
 pypy3
 python
@@ -147,6 +155,7 @@ redis
 redshift
 reflector
 remind
+rlwrap
 rofi
 rofi-calc
 rofimoji
@@ -193,6 +202,7 @@ ttf-fira-mono
 ttf-font-awesome
 ttf-hack
 ttf-junicode
+ttf-roboto-mono
 ttf-ubuntu-font-family
 ufw
 unzip
@@ -250,6 +260,7 @@ xorg-xvinfo
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
+xpdf
 xsel
 xss-lock
 xterm
@@ -257,4 +268,5 @@ yarn
 youtube-dl
 zathura
 zathura-pdf-poppler
+zathura-ps
 zsh
