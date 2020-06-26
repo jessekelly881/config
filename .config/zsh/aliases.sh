@@ -3,6 +3,8 @@ alias cat="bat"
 alias du="ncdu --color dark"
 alias mount=". /home/jesse/.config/scripts/mount.sh"
 alias conf="yadm ls-tree --name-only -r HEAD $HOME | fzf --prompt \"Open config file: \" --height 60% --color=bw --reverse --border --preview 'bat {}' | xargs -r emacsclient -t"
+alias bitcoin="electrum -g text -w $HOME/.electrum/wallets/default"
+alias mail="mbsync gmail; neomutt -f ~/.mail/gmail/Inbox"
 
 # quick access
 alias n="npm"
