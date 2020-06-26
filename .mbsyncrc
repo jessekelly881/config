@@ -2,11 +2,8 @@ IMAPAccount gmail
 # Address to connect to
 Host imap.gmail.com
 User kellyjesse881@gmail.com
-PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d ~/.mailpass.gpg"
-
-# Use SSL
+PassCmd "pass show personal/sites/gmail"
 SSLType IMAPS
-# The following line should work. If get certificate errors, uncomment the two following lines and read the "Troubleshooting" section.
 CertificateFile /etc/ssl/certs/ca-certificates.crt
 #CertificateFile ~/.cert/imap.gmail.com.pem
 #CertificateFile ~/.cert/Equifax_Secure_CA.pem

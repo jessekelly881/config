@@ -1,4 +1,14 @@
+# base settings
+auto_view text/html text/calendar application/ics # view html automatically
+
+set mailcap_path = ~/.mutt/mailcap
+set folder = ~/.mail/
+set sort_aux=last-date-received
+set sort=threads
+set sort_re
+set sort = reverse-date-received
 set sendmail="/usr/bin/msmtp"
+set mbox_type=Maildir
 set use_from=yes
 set realname="Jesse"
 set from=kellyjesse881@gmail.com
@@ -8,3 +18,10 @@ set charset="utf-8"
 set send_charset="gb2312"
 set send_charset="utf-8"
 set send_charset="us-ascii:gbk:utf-8"
+
+# visual settings
+unset help                           # No help bar at the top of index
+color normal blue default
+color hdrdefault black default
+color indicator red default
+color status green default
