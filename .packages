@@ -17,6 +17,7 @@ bluez-hid2hci
 bluez-utils
 bsd-games
 btrfs-progs
+bup
 cloc
 clojure
 cmus
@@ -125,6 +126,8 @@ playerctl
 pngcrush
 pngquant
 postgresql
+projectm
+projectm-pulseaudio
 pstotext
 pulseaudio
 pulseaudio-bluetooth
@@ -144,6 +147,7 @@ python-pycodestyle
 python-pyflakes
 python-sympy
 python-tldextract
+python-tornado
 python-wikipedia
 python-wxpython
 qemu
@@ -190,6 +194,7 @@ texlive-science
 thc-ipv6
 the_silver_searcher
 tig
+tk
 tldr
 tmux
 traceroute
@@ -261,6 +266,7 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 xpdf
+xscreensaver
 xsel
 xss-lock
 xterm
