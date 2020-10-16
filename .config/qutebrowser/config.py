@@ -59,3 +59,6 @@ c.editor.command = ['emacsclient', '{}']
 # bindings
 config.bind(',v', 'hint links spawn mpv {hint-url}')
 config.bind(',o', 'open -t https://outline.com/{url}')
+
+# Clear cookies on exit
+c.content.cookies.store=False

@@ -1,19 +1,17 @@
 # program aliases
 alias cat="bat"
 alias du="ncdu --color dark"
-alias mount=". /home/jesse/.config/scripts/mount.sh"
 alias conf="yadm ls-tree --name-only -r HEAD $HOME | fzf --prompt \"Open config file: \" --height 60% --color=bw --reverse --border --preview 'bat {}' | xargs -r emacsclient -t"
 alias bitcoin="electrum -g text -w $HOME/.electrum/wallets/default"
 alias mail="mbsync gmail; neomutt -f ~/.mail/gmail/Inbox"
 
 # quick access
-alias n="npm"
 alias c="clear"
 alias C="yadm"
 alias t="touch"
 alias e="$EDITOR"
 alias ed="emacs --daemon --no-window-system -fg '$color1' &"
-alias g="git"
+alias g="hub"
 alias r="ranger"
 alias o="rifle" #Open
 alias s="sudo"

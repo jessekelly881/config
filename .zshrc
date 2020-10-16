@@ -5,6 +5,7 @@ setopt HIST_IGNORE_SPACE
 export PATH=$HOME/.config/scripts:$PATH
 export PATH=$HOME/dev/projects/notes:$PATH
 export PATH="/home/jesse/.local/bin:$PATH" # .local/bin
+export PATH="/home/jesse/.bin:$PATH" # .local/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/jesse/.oh-my-zsh"

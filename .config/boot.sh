@@ -16,9 +16,9 @@ xbanish & # Hide mouse after keypress
 # Visual config: shaddows, background images, etc.
 ##
 compton --respect-prop-shadow &
-oneko -fg "$color1" -tora -tofocus &
 python -m pywal -R &
 source "$HOME/.cache/wal/colors.sh" # Source color scheme
+oneko -fg "$color1" -tora -tofocus &
 
 ##
 # Background services

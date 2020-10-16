@@ -15,8 +15,15 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 GRADLE_VERSION=4.10.2
 export PATH=$PATH:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:/opt/tools:/opt/gradle/gradle-"$GRADLE_VERSION"/bin
 
-# Git scripts path
+# Scripts path
 export PATH=$PATH:$HOME/.gitscripts
+export PATH=$PATH:$HOME/.scripts
+
+export DENO_INSTALL="/home/jesse/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+export PATH="/home/jesse/.gem/ruby/2.7.0/bin:$PATH"
+
 
 #Source Color Scheme.
 source "$HOME/.cache/wal/colors.sh"

@@ -8,7 +8,7 @@ URxvt.borderColor: rgba:0000/0000/0200/c800
 URxvt.internalBorder: 8
 URxvt.cursorBlink: 1
 URxvt.cursorUnderline: 1
-URxvt*font: xft:Fantasque Sans Mono:size=9:antialias=true:hinting:true, xft:Noto Emoji:size=9, xft:DejaVu Sans Mono:size=8:antialias=true:hinting=true, Font Awesome 5 Free Regular:size=8:style=Regular, xft:Unifont:size=12:weight=200, xft:Noto Sans Ethiopic:size=8:slant=0:weight=200, xft:Code2000:size=8:antialias=false, -*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+URxvt*font: xft:Fantasque Sans Mono:size=9:antialias=true:hinting:true, xft:Noto Emoji:size=9, xft:DejaVu Sans Mono:size=10:antialias=true:hinting=true, Font Awesome 5 Free Regular:size=8:style=Regular, xft:Unifont:size=12:weight=200, xft:Noto Sans Ethiopic:size=8:slant=0:weight=200, xft:Code2000:size=10:antialias=false, -*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
 URxvt*cursorColor: {cursor}
 URxvt.geometry: 90x52
 URxvt*letterSpace: 0

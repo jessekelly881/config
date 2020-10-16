@@ -14,6 +14,8 @@ settings:
         xn: notify-send "test" "test"
   colors.statusbar.command.fg:
     global: white
+  content.cookies.store:
+    global: false
   content.geolocation:
     http://localhost:8100: true
   downloads.location.directory:
@@ -24,10 +26,9 @@ settings:
     global: rifle
   fonts.contextmenu:
     global: Fantasque Sans Mono:size=9
-  fonts.monospace:
-    global: '"Fantasque Sans Mono:size=9", Monospace, "DejaVu Sans Mono", Monaco,
-      "Bitstream Vera Sans Mono", "Andale Mono", "Courier New", Courier, "Liberation
-      Mono", monospace, Fixed, Consolas, Terminal'
+  fonts.default_family:
+    global:
+    - Fantasque Sans Mono:size=9
   hints.border:
     global: '0px solid #E3BE23'
   statusbar.hide:

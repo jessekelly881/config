@@ -3,6 +3,5 @@ DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus;
 
 0 * * * * pacman -Qqen > ~/.packages # save package list to ~/.packages ever hour
 0 * * * * tree -d ~/media/music > ~/docs/music.txt # save music list(album names only) to ~/docs/music.txt every hour
-*/15 * * * * . ~/proj/backup.sh
-*/10  * * * * crontab -l > ~/crontab.bak
-*/5  * * * * . ~/journal/.cycle
+*/10 * * * * crontab -l > ~/crontab.bak
+*/10 * * * * . ~/journal/.cycle
