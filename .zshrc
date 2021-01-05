@@ -119,3 +119,4 @@ export HISTFILESIZE=100000
 export HISTFILE=~/.zsh_history # Don't forget to to set this also
 setopt HIST_FIND_NO_DUPS
 setopt HIST_IGNORE_ALL_DUPS
+if [ -e /home/jesse/.nix-profile/etc/profile.d/nix.sh ]; then . /home/jesse/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

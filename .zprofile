@@ -24,6 +24,11 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 
 export PATH="/home/jesse/.gem/ruby/2.7.0/bin:$PATH"
 
+// Local NPM
+export PATH="$HOME/.npm-global/bin/:$PATH"
+
+// Nix
+. ~/.nix-profile/etc/profile.d/nix.sh
 
 #Source Color Scheme.
 source "$HOME/.cache/wal/colors.sh"

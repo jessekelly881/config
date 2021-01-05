@@ -53,8 +53,10 @@ cloc
 clojure
 cmt
 cmus
+code
 conky
 cpupower
+croc
 cronie
 csound
 csoundqt
@@ -174,6 +176,7 @@ liquidsfz
 lmms
 lsp-plugins
 luarocks
+luit
 luppp
 lv2file
 lynx
@@ -247,6 +250,7 @@ pvoc
 pypy
 pypy3
 python
+python-argcomplete
 python-django
 python-faker
 python-flask
@@ -255,9 +259,11 @@ python-html2text
 python-language-server
 python-mccabe
 python-pandas
+python-pdftotext
 python-pyalsa
 python-pycodestyle
 python-pyflakes
+python-pywal
 python-sympy
 python-tldextract
 python-tornado
@@ -278,6 +284,7 @@ qt5-tools
 qtractor
 qutebrowser
 qxgedit
+ranger
 rclone
 realtime-privileges
 redis
@@ -376,6 +383,7 @@ wolf-spectrum
 x42-plugins
 xautolock
 xf86-video-vesa
+xmonad
 xmonk.lv2
 xorg-bdftopcf
 xorg-docs
@@ -390,7 +398,6 @@ xorg-server-devel
 xorg-server-xephyr
 xorg-server-xnest
 xorg-server-xvfb
-xorg-server-xwayland
 xorg-sessreg
 xorg-smproxy
 xorg-x11perf
@@ -419,6 +426,7 @@ xorg-xrefresh
 xorg-xset
 xorg-xsetroot
 xorg-xvinfo
+xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
